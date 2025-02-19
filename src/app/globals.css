@@ -6,3 +6,7 @@
 *{
     font-family: "Source Sans 3", serif;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
