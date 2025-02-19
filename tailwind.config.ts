@@ -9,9 +9,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "off-grey": "#1D1D1B",
       },
+      backgroundImage: {
+        "hero": "url('/assets/images/hero-bg.webp')",
+        "youtube-img": "url('/assets/images/how-it-work-img.webp')"
+      },
+      lineHeight: {
+        "custom-sm": "103%",
+        "custom-md": "125%",
+      },
+      
+      fontSize:{
+        "custom-sm": "21px",
+        "custom-md": "49px",
+        "custom-lg": "76px",
+        "custom-xl": "80px",
+
+      }
     },
   },
   plugins: [],
