@@ -10,6 +10,10 @@ export default {
     extend: {
       colors: {
         "off-grey": "#1D1D1B",
+        "off-white": "#F5F5F5",
+        "custom-red": "#FF132D",
+        "custom-blue": "#009FE3",
+        "custom-yellow": "#FEBE32",
       },
       backgroundImage: {
         "hero": "url('/assets/images/hero-bg.webp')",
@@ -22,11 +26,14 @@ export default {
       
       fontSize:{
         "custom-sm": "21px",
+        "custom-ssm": "35px",
         "custom-md": "49px",
         "custom-lg": "76px",
         "custom-xl": "80px",
 
-      }
+      },
+
+      
     },
   },
   plugins: [],
