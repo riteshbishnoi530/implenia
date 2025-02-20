@@ -12,7 +12,7 @@ function Kickbox() {
         <div className='bg-white pt-[134px] max-lg:py-20 max-md:py-16 max-sm:py-10 pb-[129px] px-4'>
             <div className='max-w-[1150px] mx-auto'>
                 <CustomHeading text='IMPLENIA KICKBOX' />
-                <CustomDescription pera='Since 2019, our Kickbox Intrapreneurship Program has been inspiring employees across all divisions to turn their ideas into impactful solutions. From validating ideas (RedBox) to piloting projects (BlueBox) and driving implementation (GoldBox), Kickbox provides the tools and support to shape the future of Implenia. Become an intrapreneur yourself and bring your idea to life!'/>
+                <CustomDescription myClass='mt-4' pera='Since 2019, our Kickbox Intrapreneurship Program has been inspiring employees across all divisions to turn their ideas into impactful solutions. From validating ideas (RedBox) to piloting projects (BlueBox) and driving implementation (GoldBox), Kickbox provides the tools and support to shape the future of Implenia. Become an intrapreneur yourself and bring your idea to life!'/>
                 <div className='flex items-center max-xl:flex-col'>
                     <div className='flex max-md:gap-12 max-sm:flex-wrap justify-center items-center mt-5'>
                         {KICK_BOX_LIST.map((obj, i) => (

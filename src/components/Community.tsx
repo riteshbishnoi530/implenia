@@ -35,7 +35,7 @@ const Community = () => {
             {COMMUNITY_LIST.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="max-w-[795px] flex flex-col justify-center mx-auto">
-                  <p className="text-[100px] text-center leading-[125px] max-md:leading-[100%] mb-[-50px] text-orangeLight tracking-[-0.66px]">
+                  <p className="text-[100px] text-center leading-[125px] max-md:leading-[100%] mb-[-50px] text-custom-yellow tracking-[-0.66px]">
                     “
                   </p>
                   <h3 className="text-center font-semibold leading-[40.22px] text-[32px] max-lg:text-3xl max-md:text-2xl max-sm:text-xl max-lg:leading-9 max-md:leading-7 max-sm:leading-6">
