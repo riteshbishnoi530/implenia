@@ -50,7 +50,7 @@ const Community = () => {
                       className="max-lg:size-16 max-md:size-14 max-sm:size-12"
                     />
                     <div>
-                      <p className="text-lightGray text-[21px] font-semibold max-lg:text-xl max-md:text-lg max-sm:text-base">
+                      <p className="text-light-gray text-[21px] font-semibold max-lg:text-xl max-md:text-lg max-sm:text-base">
                         {item.post}
                       </p>
                       <p className="text-black text-[21px] font-semibold leading-[100%] max-lg:text-xl max-md:text-lg max-sm:text-base">

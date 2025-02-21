@@ -10,7 +10,7 @@ function KickboxProcess() {
         <div className='max-w-[1122px] mx-auto px-4 pt-[129px] pb-[142px] max-lg:py-20 max-md:py-16 max-sm:py-10'>
             <CustomHeading text='KICKBOX PROCESS' />
             <CustomDescription myClass='mt-4' pera='The Kickbox program at Implenia guides participants through three key phases to turn their ideas into impactful solutions: 1. RedBox for validation, 2. BlueBox for piloting, and 3. GoldBox for implementation. To progress through each phase, you’ll work to continuously optimize your idea and demonstrate its potential to internal Implenia sponsors.' />
-            <div className='flex max-lg:flex-wrap justify-center gap-[51px] max-xl:gap-6 mt-[73px]'>
+            <div className='flex max-lg:flex-wrap justify-center gap-[51px] max-xl:gap-6 !gap-y-10 mt-[73px]'>
                 {KICKBOX_PROCESS_LIST.map((obj, i) => (
                     <div key={i}>
                         <Image className='mx-auto mb-[39px] max-lg:mb-6' src={obj.image} alt={obj.imageAlt} width={227} />
