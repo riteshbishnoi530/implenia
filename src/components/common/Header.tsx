@@ -7,9 +7,6 @@ import { HEADER_LIST } from "@/utils/helper";
 const Header = () => {
     const [showSlide, setShowSlide] = useState(false);
 
-    const toggleSidebar = () => setShowSlide(!showSlide);
-    const closeNavbar = () => setShowSlide(false);
-
     useEffect(() => {
         const body = document.body;
         if (showSlide) {
@@ -36,7 +33,7 @@ const Header = () => {
                     {HEADER_LIST.map((obj, i) => (
                         <ul key={i}>
                             <li className="flex gap-1 flex-row justify-center items-center">
-                                <Link href={obj.link}onClick={closeNavbar} className="text-base text-black font-bold max-lg:text-xl hover:text-custom-yellow transition-all duration-300 ease-linear" >
+                                <Link href={obj.link} onClick={() => setShowSlide(false)} className="text-base text-black font-bold max-lg:text-xl hover:text-custom-yellow transition-all duration-300 ease-linear" >
                                     {obj.title}
                                 </Link>
                             </li>
@@ -44,7 +41,7 @@ const Header = () => {
                     ))}
 
                 </div>
-                <div onClick={toggleSidebar} className="z-[21] flex-col gap-2 max-sm:gap-[3px] lg:hidden flex cursor-pointer" >
+                <div onClick={() => setShowSlide(!showSlide)} className="z-[21] flex-col gap-2 max-sm:gap-[3px] lg:hidden flex cursor-pointer" >
                     <span
                         className={`${showSlide
                             ? "w-9 max-sm:w-4 max-sm:h-[3px] h-1 bg-black rotate-45 translate-y-5 max-sm:translate-y-2 duration-300 ease-linear rounded"

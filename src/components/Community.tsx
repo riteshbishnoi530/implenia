@@ -13,10 +13,10 @@ import { NextIcon, PrevIcon } from "@/utils/icons";
 
 const Community = () => {
   return (
-    <div id="community" className="bg-off-white pt-[129px] pb-[130px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-5">
+    <div id="community" className="bg-off-white pt-[129px] pb-[122px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-5">
       <div className="container max-w-[1108px] flex flex-col justify-center relative mx-auto">
         <CustomHeading
-          myClass="pb-[144px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"
+          myClass="pb-[135px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"
           text="WHAT OUR COMMUNITY SAYS"
         />
         <div>
@@ -59,6 +59,10 @@ const Community = () => {
                     </div>
                   </div>
                 </div>
+                <CustomBtn
+          title="Join the community!"
+          myClass="!mb-2 !text-custom-red justify-center flex !border !border-custom-red !py-4 !px-[37px] rounded-[47px] mx-auto mt-[39px] max-md:mt-6"
+        />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -69,10 +73,7 @@ const Community = () => {
        <PrevIcon/>
           </button>
         </div>
-        <CustomBtn
-          title="Join the community!"
-          myClass="!text-custom-red !border !border-custom-red !py-4 !px-[37px] rounded-[47px] mx-auto mt-[39px] max-md:mt-6"
-        />
+        
       </div>
     </div>
   );

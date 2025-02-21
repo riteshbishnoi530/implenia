@@ -17,11 +17,11 @@ export default {
       },
       backgroundImage: {
         "hero": "url('/assets/images/hero-bg.webp')",
-        "youtube-img": "url('/assets/images/how-it-work-img.webp')"
       },
       lineHeight: {
         "custom-sm": "103%",
         "custom-md": "125%",
+        "custom-lg": "128%",
       },
       
       fontSize:{

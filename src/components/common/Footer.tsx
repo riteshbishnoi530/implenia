@@ -59,17 +59,17 @@ const Footer = () => {
                             <input
                                 type="email"
                                 required
-                                className="py-[17px] px-[19px] outline-none w-full bg-white"
+                                className="text-black placeholder:text-black py-[17px] px-[19px] outline-none w-full bg-white"
                                 placeholder="Ihre E-Mail"
                             />
                         </div>
                         <textarea
                             required
-                            className="w-full resize-none mt-2 outline-none px-[15px] min-h-[121px] py-[18px] bg-white"
+                            className="w-full resize-none text-black placeholder:text-black mt-2 outline-none px-[15px] min-h-[121px] py-[18px] bg-white"
                             placeholder="Ihre E-Mail"
                         ></textarea>
                         <div className="w-full justify-end flex">
-                            <button className="py-[9.5px] px-[21.5px] bg-custom-red text-white font-bold text-sm">
+                            <button className="py-[7px] px-[23px] hover:scale-110 transition-all duration-300 ease-linear bg-custom-red text-white font-bold text-sm">
                                 SENDEN
                             </button>
                         </div>

@@ -3,7 +3,6 @@ import { FAQ_LIST } from "@/utils/helper";
 import React, { useState } from "react";
 import CustomHeading from "./common/CustomHeading";
 import CustomDescription from "./common/CustomDescription";
-import { ArrowIcon } from "@/utils/icons";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -22,7 +21,7 @@ const Faq = () => {
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="text-[21px] font-semibold text-left leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
+              className="text-[21px] font-semibold text-left leading-custom-sm max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
             >
               {data.title}
               <img
