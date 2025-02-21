@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function Hero() {
   return (
-    <div className='bg-white'>
+    <div id='home' className='bg-white'>
       <Header />
       <div className='lg:pl-[50px] relative bg-hero bg-cover bg-no-repeat bg-right lg:h-[662px] max-lg:py-20 flex flex-col justify-center px-4'>
         <Image className='absolute -bottom-10 left-0 max-lg:max-w-[200px] max-md:max-w-[150px]' src='/assets/images/Boxly-winking-left.webp' alt='logo' width={400} height={400}/>

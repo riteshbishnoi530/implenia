@@ -1,4 +1,6 @@
+import Footer from "@/components/common/Footer";
 import Community from "@/components/Community";
+import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import HowItWork from "@/components/HowItWork";
 import Kickbox from "@/components/Kickbox";
@@ -14,6 +16,8 @@ export default function Home() {
    <KickboxProcess/>
    <Community/>
    <Stories/>
+   <Faq/>
+   <Footer/>
    </>
 
   );

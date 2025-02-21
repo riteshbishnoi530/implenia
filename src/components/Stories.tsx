@@ -6,7 +6,7 @@ import CustomBtn from "./common/CustomBtn";
 
 const Stories = () => {
   return (
-    <div className="pt-[128px] pb-[144px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-4">
+    <div id="stories" className="pt-[128px] pb-[144px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-4">
       <div className="mx-auto max-w-[1091px]">
         <CustomHeading
           myClass="pb-[25px] max-sm:pb-2 max-md-4"

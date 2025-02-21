@@ -11,7 +11,7 @@ interface StoriesItem {
   title: string;
   cardBoxClass: string;
   boxContent: string;
-}
+};
 
 interface KickboxProcessItem {
   image: any;
@@ -21,11 +21,17 @@ interface KickboxProcessItem {
   description: string;
   boxDuration: string;
   budget: string;
-}
+};
+
+interface FaqItem {
+  title: string;
+  description: string;
+};
+
 export const HEADER_LIST = [
     {
       title: "Home",
-      link: "/",
+      link: "#home",
     },
     {
       title: "Stories",
@@ -131,5 +137,63 @@ export const HEADER_LIST = [
       profile: Profile,
       post: "Head Division Buildings",
       name: "Jens Vollmar",
+    },
+  ];
+
+  export const FAQ_LIST: FaqItem[] = [
+    {
+      title: "What kind of ideas can I submit?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title: "Can we also start the RedBox as a team?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title:
+        "I have a good idea for the company, but I do not want to work on it myself, can I still submit?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title: "When can I submit my idea?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title: "When do I get my RedBox?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title: "How do I get a BlueBox?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+    {
+      title: "How do I get a GoldBox?",
+      description:
+        "You are free to submit any idea related to Implenia’s business activities, customers or internal processes. Of course we look especially for new and creative ideas and your fresh perspective on the future of construction and real estate.",
+    },
+  ];
+
+  export const FOOTER_LIST = [
+    {
+      title: "Home",
+      link: "#hero",
+    },
+    {
+      title: "Projects",
+      link: "#projects",
+    },
+    {
+      title: "Community",
+      link: "#community",
+    },
+    {
+      title: "Contact",
+      link: "#contact",
     },
   ];

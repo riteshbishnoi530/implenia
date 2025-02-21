@@ -1,5 +1,5 @@
 "use client";
-import React, {useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HEADER_LIST } from "@/utils/helper";
@@ -10,6 +10,14 @@ const Header = () => {
     const toggleSidebar = () => setShowSlide(!showSlide);
     const closeNavbar = () => setShowSlide(false);
 
+    useEffect(() => {
+        const body = document.body;
+        if (showSlide) {
+            body.classList.add('overflow-hidden');
+        } else {
+            body.classList.remove('overflow-hidden');
+        }
+    }, [showSlide]);
     return (
         <div
             className="max-w-[1177px] w-full mx-auto px-4 py-[18.5px] max-md:py-[5px]">
@@ -24,15 +32,11 @@ const Header = () => {
                     />
                 </Link>
                 <div
-                    className={`flex gap-5 max-lg:gap-3 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:fixed max-lg:top-0 max-lg:w-full max-lg:h-full max-lg:bg-white duration-300 ease-linear z-20 ${showSlide ? "max-lg:left-0" : "max-lg:left-full" }`} >
+                    className={`flex gap-5 max-lg:gap-3 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:fixed max-lg:top-0 max-lg:w-full max-lg:h-full max-lg:bg-white duration-300 ease-linear z-20 ${showSlide ? "max-lg:left-0" : "max-lg:left-full"}`} >
                     {HEADER_LIST.map((obj, i) => (
                         <ul key={i}>
-                            <li className="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:h-0.5 after:bg-black">
-                                <Link
-                                    href={obj.link}
-                                    onClick={closeNavbar}
-                                    className="text-base text-black font-bold max-lg:text-xl"
-                                >
+                            <li className="flex gap-1 flex-row justify-center items-center">
+                                <Link href={obj.link}onClick={closeNavbar} className="text-base text-black font-bold max-lg:text-xl hover:text-custom-yellow transition-all duration-300 ease-linear" >
                                     {obj.title}
                                 </Link>
                             </li>
