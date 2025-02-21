@@ -13,7 +13,7 @@ function KickboxProcess() {
             <div className='flex max-lg:flex-wrap justify-center gap-[51px] max-xl:gap-6 !gap-y-10 mt-[73px]'>
                 {KICKBOX_PROCESS_LIST.map((obj, i) => (
                     <div key={i}>
-                        <Image className='mx-auto mb-[39px] max-lg:mb-6' src={obj.image} alt={obj.imageAlt} width={227} />
+                        <Image className='mx-auto mb-[39px] pointer-events-none max-lg:mb-6' src={obj.image} alt={obj.imageAlt} width={227} />
                         <div className='flex flex-col gap-8 max-w-[323px] max-md:max-w-[500px] border border-black rounded-[28px] pb-[19px] pt-8 px-6 max-xl:px-4'>
                             <div>
                                 <p className={`text-custom-2xl leading-custom-xs font-semibold ${i === 0 ? "text-custom-red" : i === 1 ? "text-custom-blue" : "text-custom-yellow"}`} >

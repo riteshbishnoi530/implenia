@@ -32,7 +32,7 @@ const Stories = () => {
                 alt={item.title}
                 width={325}
                 height={207}
-                className="rounded-[28px] w-full max-md:rounded-2xl"
+                className="pointer-events-none rounded-[28px] w-full max-md:rounded-2xl"
               />
               </div>
               <h3 className="text-[35px] leading-[44px] tracking-[0.66px] max-lg:text-3xl max-md:text-2xl max-sm:text-xl max-lg:leading-[36px] max-md:leading-[32px] max-sm:leading-[28px] font-semibold text-blackLight pt-[49px] max-sm:py-8 max-sm:px-4 pb-[63.5px] pr-[17px] pl-[27.5px]">
