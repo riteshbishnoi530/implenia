@@ -6,7 +6,7 @@ import CustomBtn from "./common/CustomBtn";
 
 const Stories = () => {
   return (
-    <div id="stories" className="pt-[128px] pb-[144px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-4">
+    <div id="stories" className="pt-[128px] pb-[144px] max-lg:py-20 max-md:py-16 max-sm:py-10 px-5">
       <div className="mx-auto max-w-[1091px]">
         <CustomHeading
           myClass="pb-[25px] max-sm:pb-2 max-md-4"
@@ -16,7 +16,7 @@ const Stories = () => {
           {STORIES_LIST.map((item, index) => (
             <div
               key={index}
-              className="border border-solid max-w-[323px] max-md:max-w-[500px] w-full border-black relative rounded-[28px] max-md:rounded-2xl"
+              className="border border-solid max-w-[323px] max-md:max-w-[600px] w-full border-black relative rounded-[28px] max-md:rounded-2xl"
             >
               <div
                 className={`max-w-[104px] w-full flex justify-center items-center min-h-[27px] rounded-[13.5px] absolute top-[27px] left-[23px] max-sm:top-4 max-sm:left-3 ${index === 0 ? "bg-custom-blue" : "bg-custom-yellow"
@@ -26,7 +26,7 @@ const Stories = () => {
                   {item.boxContent}
                 </p>
               </div>
-              <div className="bg-custom-grey">
+              <div className="bg-custom-grey rounded-[28px]">
               <Image
                 src={item.image}
                 alt={item.title}

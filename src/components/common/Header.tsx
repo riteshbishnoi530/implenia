@@ -17,7 +17,7 @@ const Header = () => {
     }, [showSlide]);
     return (
         <div
-            className="max-w-[1177px] w-full mx-auto px-4 py-[18.5px] max-md:py-[5px]">
+            className="max-w-[1177px] w-full mx-auto px-5 py-[18.5px] max-md:py-[5px]">
             <div className="flex justify-between items-center">
                 <Link href="/">
                     <Image

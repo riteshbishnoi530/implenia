@@ -5,9 +5,9 @@ import React from "react";
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <div id="contact" className="bg-black pt-[138px] pb-[65px] max-md:py-16 max-sm:py-10 px-4">
-            <div className="max-w-[1117px] flex gap-10 max-md:gap-6 max-md:flex-col mx-auto justify-between">
-                <div className="max-w-[456px] w-full flex justify-between max-[500.98px]:flex-col gap-6">
+        <div id="contact" className="bg-black pt-[138px] pb-[83px] max-md:py-16 max-sm:py-10 px-5">
+            <div className="max-w-[1117px] flex gap-10 max-md:gap-6 flex-wrap mx-auto justify-between">
+                <div className="max-w-[456px] w-full flex justify-between max-[500.98px]:flex-col gap-x-24 gap-y-6">
                     <div className="max-w-[289px]">
                         <p className="font-black text-base text-white leading-[20.11px] tracking-[-0.22px]">
                             Implenia Innovation Hub
@@ -21,17 +21,17 @@ const Footer = () => {
                         >
                             innovation@implenia.com
                         </Link>
-                        <p className="font-black mt-10 max-md:mt-5 text-base text-white leading-[20.11px] tracking-[-0.22px]">
+                        <p className="font-black mt-10 max-md:mt-5 max-sm:mt-2 text-base text-white leading-[20.11px] tracking-[-0.22px]">
                             Implenia Innovation Hub
                         </p>
                         <p className="leading-[20.11px] tracking-[-0.22px] text-white">
                             This revised version is based on Adobe Kickbox which is licensed
                             under the Creative Commons Attribution License.
                         </p>
-                        <p className="leading-[20.11px] mt-10 max-md:mt-5  tracking-[-0.22px] text-white">
+                        <p className="leading-[20.11px] mt-10 max-md:mt-5 max-sm:mt-2 tracking-[-0.22px] text-white">
                             Data Protection I Imprint
                         </p>
-                        <p className="leading-[12.57px] mt-[38px] max-md:mt-5 text-xs tracking-[-0.22px] text-white">
+                        <p className="leading-[12.57px] mt-[38px] max-md:mt-5  text-xs tracking-[-0.22px] text-white">
                             Copyright © {year} Imlenia. Alle Rechte vorbehalten.
                         </p>
                     </div>
@@ -55,17 +55,17 @@ const Footer = () => {
                         Contact
                     </p>
                     <form className="w-[273px]">
-                        <div className="max-w-[189px]">
+                        <div className="max-w-[189px] max-md:max-w-full">
                             <input
                                 type="email"
                                 required
-                                className="text-black placeholder:text-black py-[17px] px-[19px] outline-none w-full bg-white"
+                                className="text-black placeholder:text-black py-[17px] max-lg:py-3 px-[19px] outline-none w-full bg-white"
                                 placeholder="Ihre E-Mail"
                             />
                         </div>
                         <textarea
                             required
-                            className="w-full resize-none text-black placeholder:text-black mt-2 outline-none px-[15px] min-h-[121px] py-[18px] bg-white"
+                            className="w-full resize-none text-black placeholder:text-black mt-2 outline-none px-[15px] min-h-[121px] max-lg:min-h-24 py-[18px] bg-white"
                             placeholder="Ihre E-Mail"
                         ></textarea>
                         <div className="w-full justify-end flex">
