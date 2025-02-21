@@ -11,6 +11,7 @@ export default {
       colors: {
         "off-grey": "#1D1D1B",
         "light-gray": "#8F9090",
+        "custom-grey": "#D9D9D9",
         "off-white": "#F5F5F5",
         "custom-red": "#FF132D",
         "custom-blue": "#009FE3",

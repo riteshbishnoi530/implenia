@@ -21,7 +21,7 @@ const Faq = () => {
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="text-[21px] font-semibold text-left leading-custom-sm max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
+              className="text-custom-sm font-semibold text-left leading-custom-sm max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
             >
               {data.title}
               <img

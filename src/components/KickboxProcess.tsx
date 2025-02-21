@@ -30,7 +30,7 @@ function KickboxProcess() {
                     </div>
                 ))}
             </div>
-            <CustomBtn myClass='!text-custom-red max-md:mt-6 !border-custom-red !py-4 flex max-lg:mx-auto !px-[46px] mt-[39px]' title='Start your RedBox!'/>
+            <CustomBtn myClass='lg:!ml-5 !text-custom-red max-md:mt-6 !border-custom-red !py-4 flex max-lg:mx-auto !px-[46px] mt-[39px]' title='Start your RedBox!'/>
         </div>
     )
 }
