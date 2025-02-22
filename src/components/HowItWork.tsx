@@ -26,14 +26,14 @@ const HowItWork = () => {
                                     className="w-full h-full rounded-3xl absolute top-0"
                                 />
                             ) : (
-                                <div className="w-full max-w-[372px] bg-custom-yellow py-[15px] px-[3px] max-lg:max-w-[300px] max-md:max-w-[250px] max-sm:max-w-[180px] absolute top-[24px] left-[29px] max-lg:top-2 max-lg:left-2">
-                                    <p className="text-center text-[21px] max-lg:text-base max-sm:text-[8px] leading-custom-sm font-bold max-w-[375px] mx-auto text-black">
+                                <div className="w-full max-w-[372px] bg-custom-yellow py-[15px] max-lg:py-3 px-[3px] max-lg:max-w-[250px] max-md:max-w-[250px] max-sm:max-w-[180px] absolute top-[24px] left-[29px] max-lg:top-2 max-lg:left-2">
+                                    <p className="text-center text-[21px] max-lg:text-xs max-sm:text-[8px] !leading-custom-sm font-bold max-w-[375px] mx-auto text-black">
                                         VIDEO CAN BE EXCHANGED FOR CAMPAIGNS.
                                     </p>
-                                    <p className="max-lg:text-base max-sm:text-[8px] text-center text-[21px] leading-custom-sm font-bold text-black pt-7 max-lg:pt-2 max-sm:pt-2">
+                                    <p className="max-lg:text-xs max-sm:text-[8px] text-center text-[21px] !leading-custom-sm font-bold text-black pt-7 max-lg:pt-2 max-sm:pt-1">
                                         -Titel: Name of Campaign
                                     </p>
-                                    <p className="max-lg:text-base max-sm:text-[8px] text-center text-[21px] leading-custom-sm font-bold text-black">
+                                    <p className="max-lg:text-xs max-sm:text-[8px] text-center text-[21px] !leading-custom-sm font-bold text-black">
                                         -Button: Join the campaign!
                                     </p>
                                 </div>

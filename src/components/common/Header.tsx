@@ -6,7 +6,11 @@ import { HEADER_LIST } from "@/utils/helper";
 
 const Header = () => {
     const [showSlide, setShowSlide] = useState(false);
+    const [active, setActive] = useState <number | null>(0);
 
+    const activeHandle = (index:number) => {
+        setActive(active === index ? null :index );
+    }
     useEffect(() => {
         const body = document.body;
         if (showSlide) {
@@ -20,20 +24,14 @@ const Header = () => {
             className="max-w-[1177px] w-full mx-auto px-5 py-[18.5px] max-md:py-[5px]">
             <div className="flex justify-between items-center">
                 <Link href="/">
-                    <Image
-                        className="pointer-events-none max-lg:size-[76px] max-md:size-[40px]"
-                        src="/assets/images/logo.webp"
-                        alt="logo"
-                        width={93}
-                        height={93}
-                    />
+                    <Image className="pointer-events-none max-lg:size-[76px] max-md:size-[40px]" src="/assets/images/logo.webp" alt="logo"  width={93} height={93} />
                 </Link>
                 <div
                     className={`flex gap-5 max-lg:gap-3 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:fixed max-lg:top-0 max-lg:w-full max-lg:h-full max-lg:bg-white duration-300 ease-linear z-20 ${showSlide ? "max-lg:left-0" : "max-lg:left-full"}`} >
                     {HEADER_LIST.map((obj, i) => (
                         <ul key={i}>
-                            <li className="flex gap-1 flex-row justify-center items-center">
-                                <Link href={obj.link} onClick={() => setShowSlide(false)} className="text-base text-black font-bold max-lg:text-xl hover:text-custom-yellow transition-all duration-300 ease-linear" >
+                            <li onClick={() => activeHandle(i)} className={`flex gap-1 flex-row justify-center items-center ${active === i ? "text-custom-yellow" : ""}`}>
+                                <Link href={obj.link} onClick={() => setShowSlide(false)} className={`text-base font-bold max-lg:text-xl hover:text-custom-yellow transition-all duration-300 ease-linear`} >
                                     {obj.title}
                                 </Link>
                             </li>

@@ -38,7 +38,7 @@ const Community = () => {
                   <p className="text-[100px] text-center leading-[125px] max-md:leading-[100%] mb-[-50px] text-custom-yellow tracking-[-0.66px]">
                     “
                   </p>
-                  <h3 className="text-center font-semibold leading-[40.22px] text-[32px] max-lg:text-3xl max-md:text-2xl max-sm:text-xl max-lg:leading-9 max-md:leading-7 max-sm:leading-6">
+                  <h3 className="text-center font-semibold !leading-custom-md text-[32px] max-lg:text-3xl max-md:text-2xl max-sm:text-lg">
                     {item.heading}
                   </h3>
                   <div className="flex items-center gap-3.5 max-w-[710px] max-lg:max-w-[unset] max-lg:justify-center mt-[30px] max-md:mt-5 max-sm:mt-[15px] ml-auto w-full">

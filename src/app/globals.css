@@ -16,6 +16,10 @@
   display: none;
 }
 
+.swiper-pagination-bullet-active, .swiper-pagination-bullet{
+  background: red !important;
+}
+
 @media (max-width: 1023.98px) {
   .swiper-slide{
     padding-bottom: 40px;

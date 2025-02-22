@@ -1,9 +1,21 @@
+"use client";
 import { FOOTER_LIST } from "@/utils/helper";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
     const year = new Date().getFullYear();
+    const [email, setEmail] = React.useState("");
+    const [message, setMessage] = React.useState("");
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        if (email === "" || message === "") {
+          alert("Please fill in all fields");
+        } else {
+          setEmail("");
+          setMessage("");
+        }
+      };
     return (
         <div id="contact" className="bg-black pt-[138px] pb-[83px] max-md:py-16 max-sm:py-10 px-5">
             <div className="max-w-[1117px] flex gap-10 max-md:gap-6 flex-wrap mx-auto justify-between">
@@ -61,15 +73,19 @@ const Footer = () => {
                                 required
                                 className="text-black placeholder:text-black py-[17px] max-lg:py-3 px-[19px] outline-none w-full bg-white"
                                 placeholder="Ihre E-Mail"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <textarea
                             required
                             className="w-full resize-none text-black placeholder:text-black mt-2 outline-none px-[15px] min-h-[121px] max-lg:min-h-24 py-[18px] bg-white"
                             placeholder="Ihre E-Mail"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                         <div className="w-full justify-end flex">
-                            <button className="py-[7px] px-[23px] hover:scale-110 transition-all duration-300 ease-linear bg-custom-red text-white font-bold text-sm">
+                            <button  onClick={handleSubmit} className="py-[7px] px-[23px] hover:scale-110 transition-all duration-300 ease-linear bg-custom-red text-white font-bold text-sm">
                                 SENDEN
                             </button>
                         </div>

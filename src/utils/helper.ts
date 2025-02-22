@@ -31,7 +31,7 @@ interface FaqItem {
 export const HEADER_LIST = [
     {
       title: "Home",
-      link: "#home",
+      link: "/",
     },
     {
       title: "Stories",
